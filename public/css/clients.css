@@ -1,0 +1,556 @@
+/* cuadros sections  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+.cuadros-card {
+  padding: 24px 40px;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18), (0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: grid;
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  transition: 0.4s;
+}
+.card:hover {
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .img {
+  height: 200px;
+  width: 100%;
+}
+
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.card .top-text {
+  padding: 5px;
+}
+
+.card .top-text .name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+  text-align: center;
+  font-family: "Circular-Loom";
+}
+.card .top-text .name:hover {
+  font-size: 25px;
+  font-weight: 600;
+  color: #179abb;
+  text-align: center;
+}
+
+.card .top-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .bottom-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+  background: white;
+  font-family: "Circular-Loom";
+}
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text {
+  text-align: justify;
+}
+/* end cuadros sections  */
+
+/* to themesline clients   */
+.themesline {
+  position: sticky;
+  overflow: hidden;
+  min-height: 25vh;
+
+  text-align: right;
+  justify-content: right;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+h3.subtitulos {
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.timeline {
+  display: flex;
+  margin-bottom: 30px;
+  animation: alternate-reverse;
+  animation-duration: 5s;
+}
+.profile {
+  border-radius: 100px;
+  overflow: hidden;
+  z-index: 99;
+  width: 52px;
+  height: 59px;
+  margin-left: 15px;
+}
+.profile img {
+  width: 100%;
+}
+
+.content {
+  position: sticky;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(9, 9, 9);
+  padding: 20px;
+  width: 438px;
+  margin-left: 55px;
+  font-family: "circular-Loom";
+  font-weight: 600;
+}
+/* timeslande responsive */
+
+/* banner responsive */
+.banner {
+  background-position: center;
+  background: url("../img/banner/intro-img1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.banner-texto {
+  padding-top: 100px;
+  margin-left: 50px;
+}
+.banner-texto h1 {
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 4px 3px 0 #7a7a7a;
+  color: #fffbfb;
+
+  margin-bottom: 25px;
+  font-family: verdana;
+}
+
+.banner-texto p {
+  margin-left: 5px;
+  font-size: 19px;
+}
+.banner-texto h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#btn {
+  width: 144px;
+  height: 54px;
+  font-weight: bold;
+  background-color: black;
+  letter-spacing: 3px;
+  margin-left: 50px;
+  color: rgba(255, 230, 0);
+  border-radius: 20px;
+  border: none;
+  margin-top: 2%;
+  font-size: 16px;
+}
+#btn:hover {
+  background-color: mediumturquoise;
+  color: white;
+}
+/* to for slider clients */
+.slider {
+  width: 87vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 5s linear infinite;
+  -webkit-animation: scroll 10s linear infinite;
+  width: calc(205px * 19);
+}
+
+.slider .slide {
+  width: 100px;
+}
+.slider .slide img {
+  width: 100%;
+}
+
+/* end to sliders  */
+
+/* service banner  */
+.banners {
+  background-position: center;
+  background: url("../img/banner/banner-nuestros-servicios.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 65vh;
+  -webkit-text-size-adjust: 100%;
+}
+/* end to service banner */
+/* testimonials clients */
+
+.testi_section {
+  width: 100%;
+  height: auto;
+  padding: 100px 10%;
+  background-color: var(--bg);
+}
+.testi_section .heading {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+.testi_section .para {
+  font-size: 14px;
+  text-align: center;
+  margin: 3px 0 85px 0;
+  color: #919191;
+}
+
+.testi_container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+  align-content: center;
+  justify-content: center;
+}
+.testi_card {
+  padding: 29px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 21px rgba(51, 51, 51, 0.11);
+  transition: all 1s ease;
+  background: white;
+}
+.testi_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  transform: translateY(-4px);
+}
+.testi_card .quote {
+  width: 42px;
+  height: auto;
+  margin-bottom: 5px;
+  mix-blend-mode: hard-light;
+  background: transparent;
+}
+.testi_card > p {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.testi_card .test_person {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.test_person img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.test_person .name_desig h4 {
+  font-size: 19px;
+  color: var(--btn);
+}
+.test_person .name_desig p {
+  font-size: 14px;
+}
+/* end testimonials clients */
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
+  }
+}
+@media screen and (max-width: 978px) {
+  .cuadros-card {
+    grid-template-columns: repeat(1, 2fr);
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+  .timeline {
+    display: flex;
+    margin-bottom: 30px;
+    animation: alternate-reverse;
+    animation-duration: 5s;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    display: inline-grid;
+    background-position: center;
+    background: url(/images/timeline/tech.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 27vh;
+    font-size: 5px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .banner-texto {
+    padding-top: 27px;
+    margin-left: 12px;
+  }
+  .banner-texto h1 {
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 4px 3px 0 #7a7a7a;
+    color: whitesmoke;
+  }
+  #btn {
+    width: 100px;
+    height: 27px;
+    font-weight: bold;
+    background-color: black;
+    letter-spacing: 3px;
+    margin-left: 14px;
+    color: rgba(255, 230, 0);
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    font-size: 10px;
+  }
+  .banner-texto p {
+    margin-left: 5px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    text-shadow: #ccc 1px 0 10px;
+  }
+  .banner-texto h3 {
+    font-size: 15px;
+    font-weight: 800;
+    color: whitesmoke;
+    text-shadow: #131313 1px 0 10px;
+  }
+}
+@media only screen and (min-width: 860px) and (max-width: 1060px) {
+  .testi_section {
+    padding: 100px 5%;
+  }
+  .content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(9, 9, 9);
+    padding: 20px;
+    width: 355px;
+    margin-left: -4px;
+    font-family: "circular-Loom";
+    font-weight: 600;
+  }
+  #btn {
+    width: 100px;
+    height: 27px;
+    font-weight: bold;
+    background-color: black;
+    letter-spacing: 3px;
+    margin-left: 14px;
+    color: rgba(255, 230, 0);
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    font-size: 10px;
+  }
+  .banner {
+    display: flex;
+    background-position: center;
+    background: url(/images/timeline/tech.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 27vh;
+    font-size: 5px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container__cover .text {
+    max-width: 202px;
+    color: white;
+    filter: drop-shadow(5px 5px 15px black);
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .testi_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(9, 9, 9);
+    padding: 20px;
+    width: 355px;
+    margin-left: -4px;
+    font-family: "circular-Loom";
+    font-weight: 600;
+  }
+  .container__cover .text {
+    max-width: 202px;
+    color: white;
+    filter: drop-shadow(5px 5px 15px black);
+  }
+  #btn {
+    width: 100px;
+    height: 27px;
+    font-weight: bold;
+    background-color: black;
+    letter-spacing: 3px;
+    margin-left: 14px;
+    color: rgba(255, 230, 0);
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    font-size: 10px;
+  }
+  .banner {
+    display: flex;
+    background-position: center;
+    background: url(/images/timeline/tech.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 27vh;
+    font-size: 5px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .testi_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(9, 9, 9);
+    padding: 20px;
+    width: 355px;
+    margin-left: -4px;
+    font-family: "circular-Loom";
+    font-weight: 600;
+  }
+  .container__cover .text {
+    max-width: 202px;
+    color: white;
+    filter: drop-shadow(5px 5px 15px black);
+  }
+  #btn {
+    width: 100px;
+    height: 27px;
+    font-weight: bold;
+    background-color: black;
+    letter-spacing: 3px;
+    margin-left: 14px;
+    color: rgba(255, 230, 0);
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    font-size: 10px;
+  }
+  .banner {
+    display: flex;
+    background-position: center;
+    background: url(/images/timeline/tech.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 27vh;
+    font-size: 5px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+@keyframes move-vector {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
